@@ -1,0 +1,42 @@
+.nav-tab{
+  background-color: #99ff99;
+  border-style: solid;
+}
+.nav-tab:hover{
+  background-color: #04962d;
+}
+.navigation{
+  text-decoration: none;
+  color:#990000;
+}
+.jumbotron{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+.col-sm-8 {
+    float: left;
+    width: 66.666667%;
+}

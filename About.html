@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta charset="utf-8" />
+     <title>About</title>
+      <link rel="stylesheet" href="P3.css"; />
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="P3.js"></script>
+   </head>
+   <body>
+     <nav class="navbar navbar-inverse">
+       <a class="navbar-brand" href="#">
+  Chico Organics
+</a>
+  <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Products.html">Products</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Shop.html">Shop</a>
+    </li>
+  </ul>
+</nav>
+<div class="jumbotron">
+ <div class="container">
+   <h1 class="display-3">Your happiness is our goal!</h1>
+   <p>We want to make sure you are happy with every purchase so we promise you a money back guarantee if you are not 100% satisfied!</p>
+ </div>
+</div>
+<div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="http://images.wisegeek.com/escarole-farm.jpg" alt="Generic placeholder image" width="140" height="140">
+          <!--//photo credit to: http://www.wisegeek.com/what-are-the-different-types-of-farms.htm-->
+          <h2>Locally Grown</h2>
+          <p> We work with many farmer in the area to help provide us with the best products. These are experienced farmer who have been in the business for years.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="http://www.glebockifarms.com/yahoo_site_admin/assets/images/Washing_Fingerlings_SM.27864303_large.jpg" alt="Generic placeholder image" width="140" height="140">
+          <!--//photo credit to: http://www.glebockifarms.com/photos/local_produce_link_farm_visit-->
+          <h2>Finest are marketed</h2>
+          <p>We make sure ever product is wash and thoroughly inspected so we only provide you with the best.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="http://images.wisegeek.com/woman-selecting-vegetables-from-store-shelves.jpg" alt="Generic placeholder image" width="140" height="140">
+          <!--//photo credit to: http://www.wisegeek.org/are-frozen-vegetables-less-nutritious-than-fresh.htm-->
+          <h2>Right in your front yard</h2>
+          <p>We can be found online or at the local farmers market in Downtown Chico. You can buy online and you can have your order delivered or pick up at our farm or local booth at the farmers market. We make ordering as easy as possible so less work for you.</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+    </div>
+  <div class="col-sm-8">
+    <h1>Registration Form</h1>
+  <p>Use tab keys to move from one input field to the next.</p>
+  <form name='registration' onSubmit="return formValidation();">
+  <ul>
+  <li><label for="fname">First Name:</label></li>
+  <li><input type="text" id="fname" size="50" /></li>
+  <li><label for="lname">Last Name:</label></li>
+  <li><input type="text" id="lname" size="50" /></li>
+  <li><label for="paddress">Address:</label></li>
+  <li><input type="text" id="address" size="50" /></li>
+  <li><label for="pzip">ZIP Code:</label></li>
+  <li><input type="text" id="zip" /></li>
+  <li><label for="pemail">Email:</label></li>
+  <li><input type="text" id="email" size="50" /></li>
+  <button type="button" class="btn btn-primary" onclick="register();">
+    Sign Up
+  </button>
+  </ul>
+  </form>
+</div>
+</body>
+</html>
