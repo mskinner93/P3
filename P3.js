@@ -12,6 +12,8 @@ var pepperPrice = 0;
 var carrotPrice = 0;
 var potatoPrice = 0;
 
+var users = [];
+
 function register()
 {
   var fname = document.getElementById("fname").value;
@@ -20,10 +22,33 @@ function register()
   var zip = document.getElementById("zip").value;
   var email = document.getElementById("email").value;
 
-  var obj = {"firstName":"fname","lastName":"lname", "address":"address","zipcode":"zip","email":"email"}
+  if (fname == "" || lname == "" || address == "" || zip == "" || email == "")
+  {
+     window.alert("Please fill out all of the fields")
+     return false;
+  }
 
-    window.alert("Thank you "+ obj.fname + " you have been registered!")
-}
+     for(var i=0; i < users.length; i++)
+     {
+         if(users[i].email == email)
+          {
+             window.alert("The email " + email + " has already been registered")
+             return false;
+          }
+      }
+        var myuser = new person(fname, lname, address, zip, email);
+        function person(ufirst, ulast, uaddress, uzip, uemail)
+          {
+            this.firstName = ufirst;
+            this.lastName = ulast;
+            this.address = uaddress;
+            this.zip = uzip;
+            this.email = uemail;
+          }
+            users.push(myuser);
+            window.alert("Thank you "+ myuser.firstName + " you have been registered!")
+
+ }
 
 function addLettuce()
 {
